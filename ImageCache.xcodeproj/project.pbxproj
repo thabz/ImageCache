@@ -10,6 +10,9 @@
 		818505341BB956F300F27DA3 /* ImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 818505331BB956F300F27DA3 /* ImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8185053B1BB956F300F27DA3 /* ImageCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818505301BB956F300F27DA3 /* ImageCache.framework */; settings = {ASSET_TAGS = (); }; };
 		818505401BB956F300F27DA3 /* ImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185053F1BB956F300F27DA3 /* ImageCacheTests.m */; };
+		8185054B1BB9573600F27DA3 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185054A1BB9573600F27DA3 /* ImageCache.m */; settings = {ASSET_TAGS = (); }; };
+		8185054E1BB9575A00F27DA3 /* LRUIndexLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8185054C1BB9575A00F27DA3 /* LRUIndexLinkedList.h */; settings = {ASSET_TAGS = (); }; };
+		8185054F1BB9575A00F27DA3 /* LRUIndexLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185054D1BB9575A00F27DA3 /* LRUIndexLinkedList.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		8185053A1BB956F300F27DA3 /* ImageCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8185053F1BB956F300F27DA3 /* ImageCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCacheTests.m; sourceTree = "<group>"; };
 		818505411BB956F300F27DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8185054A1BB9573600F27DA3 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
+		8185054C1BB9575A00F27DA3 /* LRUIndexLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUIndexLinkedList.h; sourceTree = "<group>"; };
+		8185054D1BB9575A00F27DA3 /* LRUIndexLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRUIndexLinkedList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				818505331BB956F300F27DA3 /* ImageCache.h */,
+				8185054A1BB9573600F27DA3 /* ImageCache.m */,
+				8185054C1BB9575A00F27DA3 /* LRUIndexLinkedList.h */,
+				8185054D1BB9575A00F27DA3 /* LRUIndexLinkedList.m */,
 				818505351BB956F300F27DA3 /* Info.plist */,
 			);
 			path = ImageCache;
@@ -93,6 +102,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8185054E1BB9575A00F27DA3 /* LRUIndexLinkedList.h in Headers */,
 				818505341BB956F300F27DA3 /* ImageCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8185054B1BB9573600F27DA3 /* ImageCache.m in Sources */,
+				8185054F1BB9575A00F27DA3 /* LRUIndexLinkedList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +324,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ImageCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kalliope.ImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -328,6 +341,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ImageCache/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.kalliope.ImageCache;
 				PRODUCT_NAME = "$(TARGET_NAME)";
