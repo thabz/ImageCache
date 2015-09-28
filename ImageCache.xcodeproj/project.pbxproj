@@ -13,6 +13,8 @@
 		8185054B1BB9573600F27DA3 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185054A1BB9573600F27DA3 /* ImageCache.m */; settings = {ASSET_TAGS = (); }; };
 		8185054E1BB9575A00F27DA3 /* LRUIndexLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 8185054C1BB9575A00F27DA3 /* LRUIndexLinkedList.h */; settings = {ASSET_TAGS = (); }; };
 		8185054F1BB9575A00F27DA3 /* LRUIndexLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8185054D1BB9575A00F27DA3 /* LRUIndexLinkedList.m */; settings = {ASSET_TAGS = (); }; };
+		818505521BB958D900F27DA3 /* Future.m in Sources */ = {isa = PBXBuildFile; fileRef = 818505511BB958D900F27DA3 /* Future.m */; settings = {ASSET_TAGS = (); }; };
+		818505581BB9591800F27DA3 /* LRUIndexLinkedListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 818505571BB9591800F27DA3 /* LRUIndexLinkedListTests.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		8185054A1BB9573600F27DA3 /* ImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCache.m; sourceTree = "<group>"; };
 		8185054C1BB9575A00F27DA3 /* LRUIndexLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUIndexLinkedList.h; sourceTree = "<group>"; };
 		8185054D1BB9575A00F27DA3 /* LRUIndexLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRUIndexLinkedList.m; sourceTree = "<group>"; };
+		818505501BB958D900F27DA3 /* Future.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Future.h; sourceTree = "<group>"; };
+		818505511BB958D900F27DA3 /* Future.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Future.m; sourceTree = "<group>"; };
+		818505561BB9591800F27DA3 /* LRUIndexLinkedList_Testing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUIndexLinkedList_Testing.h; sourceTree = "<group>"; };
+		818505571BB9591800F27DA3 /* LRUIndexLinkedListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRUIndexLinkedListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +95,11 @@
 		8185053E1BB956F300F27DA3 /* ImageCacheTests */ = {
 			isa = PBXGroup;
 			children = (
+				818505501BB958D900F27DA3 /* Future.h */,
+				818505511BB958D900F27DA3 /* Future.m */,
 				8185053F1BB956F300F27DA3 /* ImageCacheTests.m */,
+				818505561BB9591800F27DA3 /* LRUIndexLinkedList_Testing.h */,
+				818505571BB9591800F27DA3 /* LRUIndexLinkedListTests.m */,
 				818505411BB956F300F27DA3 /* Info.plist */,
 			);
 			path = ImageCacheTests;
@@ -212,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				818505581BB9591800F27DA3 /* LRUIndexLinkedListTests.m in Sources */,
+				818505521BB958D900F27DA3 /* Future.m in Sources */,
 				818505401BB956F300F27DA3 /* ImageCacheTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
